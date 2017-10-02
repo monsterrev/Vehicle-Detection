@@ -18,8 +18,8 @@ The goals / steps of this project are the following:
 [image1]: ./output_images/car_car.png
 [image2]: ./output_images/car_not_car.png
 [image3]: ./output_images/HOG_example.png
-[image4]: ./output_images/sliding_windows.jpg
-[image5]: ./output_images/sliding_window.jpg
+[image4]: ./output_images/sliding_windows.png
+[image5]: ./output_images/sliding_window.png
 [image6]: ./output_images/bboxes_and_heat.png
 [image7]: ./output_images/output_bboxes.png
 [image8]: ./output_images/heat_map1.png
@@ -141,8 +141,8 @@ Here's an example result showing the heatmap from a series of frames of video, t
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  I tried to use other features like hist and spatial_bin, though they increased the accuracy of training set but performed poorly with the example test images and there were lot of false positives and false detections even after using the heat map. So ultimately I switched those off. This also helped in improving the performance. 
 A lot of effort was needed to choose the parameters such that we get good results. Event though my implementation have few false positives but I believe it is better than not detecting the car which would be worse and would likely cause accidents. But I guess my implementation makes it extra cautious. 
 Pipeline does not work best in cases - 
-## frames dont resemble training dataset. - Empty image also detects something.
-## Lighting and environment condition. white car in white background or detection of car when there is snowfall would be tricky.
+###### frames dont resemble training dataset. - Empty image also detects something.
+###### Lighting and environment condition. white car in white background or detection of car when there is snowfall would be tricky.
 
 To improve the model, probably we can use the neural networks or better CNN as read in previous classes. Hope to improve the model and get better results using that.
 
